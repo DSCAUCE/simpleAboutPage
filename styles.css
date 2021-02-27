@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.top {
+  background-image: url("https://images.unsplash.com/photo-1614250834767-b91cfce2d8f9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1278px;
+  height: 400px;
+  font-size: 60px;
+  font-weight: bold;
+  color: aliceblue;
+  text-align: center;
+}
+
+.middle {
+  display: inline-flex;
+  height: 400px;
+}
+.middle-left {
+  margin: 80px;
+}
+.middle-left img {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+.middle-right {
+  margin: 80px;
+}
+
+.contact {
+  padding: 20px;
+  background-image: linear-gradient(
+    rgb(102, 166, 219),
+    white,
+    rgb(185, 237, 250)
+  );
+
+  height: contain;
+  text-align: center;
+  font-size: 1rem;
+}
+
+footer {
+  display: flex;
+  font-size: 20px;
+  padding-top: 3px;
+  background-color: rgb(69, 191, 240);
+  justify-content: center;
+}
+
+
+/* Responsive design */
+
+@media only screen and (max-width: 768px){
+  .top{
+    width:103%;
+  }
+
+  .middle{
+    width: 100%;
+    display: block;
+    height: fit-content;
+    text-align: center;
+  }
+  .middle-left{
+    margin: 40px auto;
+  }
+  .middle-right{
+    margin: 40px auto;
+    padding: 30px;
+  }
+  .btn{
+    margin: 10px auto;
+    display: block;
+  }
+  .contact{
+    width: 100%;
+  }
+  footer{
+    display: block;
+    text-align: center;
+  }
+  .icons{
+    display: block;
+  }
+}
